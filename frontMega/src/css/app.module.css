@@ -1,0 +1,56 @@
+/* html, body {
+  width: 100%;
+  height: 100%; Asegura que el body tome toda la altura de la ventana
+  margin: 0;
+  overflow: hidden; Elimina el scroll
+} */
+
+.sectionNav {
+  position: fixed;
+  top: 0;
+  background-color: grey;
+  width: 100%;
+  height: 12vh;
+  z-index: 1;
+}
+
+.sectionHome {
+  /* border: solid red; */
+  position: fixed;
+  top: 12vh;
+  background-color: rgba(128, 128, 128, 0.39);
+  width: 100vw;
+  height: 76vh;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.sectionHome h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  color: black;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.containerHome {
+  /* border: solid green; */
+  max-width: 100%;
+  height: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.sectionFooter {
+  position: fixed;
+  bottom: 0;
+  background-color: grey;
+  width: 100%;
+  height: 12vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
