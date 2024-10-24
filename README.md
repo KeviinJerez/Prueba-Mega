@@ -8,7 +8,7 @@
 
 ## 2- Primer Paso 
 Se debe clonar el repositorio y instalar las dependencias.
-`git clone https://github.com/KeviinJerez/Prueba-Mega-GO`
+`git clone https://github.com/KeviinJerez/Prueba-Mega`
 
 ## 3- Construir Backend
 
