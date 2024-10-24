@@ -184,7 +184,7 @@ Se debe clonar el repositorio y instalar las dependencias.
 -- Ejemplo de resultado: `"message": "Internal server error"`
 
 ### Get One Journalist
-- URL: http://localhost:5000/news/:id
+- URL: http://localhost:5000/journalist/:id
 - Método: GET
 - Parámetro de entrada: `id` -> `6719a3d6ce02219f4d64fb0b`
 
