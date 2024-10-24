@@ -13,7 +13,7 @@ const insertJournalist = require('./data/data.journalist')
 const app = express()
 
 app.use(cors({
-  origin: 'http://localhost:5173' // Permite solicitudes desde el frontend
+  origin: 'http://localhost:5173' // PERMITE SOLICITUDES DESDE EL FRONTEND
 }))
 
 app.use(bodyParser.json()) // PARSEBODY JSON

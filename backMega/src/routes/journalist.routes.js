@@ -84,7 +84,7 @@ router.put('/:id', getJournalist, async (req, res) => {
 // PATCH
 router.patch('/:id', getJournalist, async (req, res) => {
   if (!req.body.name && !req.body.email && !req.body.rut) {
-    return res.status(400).json({ message: 'Se debe enviar por lo menos un campo, (title, description, imageUrl, videoUrl)' })
+    return res.status(400).json({ message: 'Se debe enviar por lo menos un campo, (name, email, rut)' })
   }
 
   try {

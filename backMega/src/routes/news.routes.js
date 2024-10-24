@@ -53,19 +53,19 @@ router.post('/', async (req, res) => {
   }
 
   try {
-    // Buscar al periodista por su id
+    // BUSCA AL PERIODISTA POR EL ID
     const journalistFindId = await Journalist.findById(journalistId)
     if (!journalistFindId) {
       return res.status(404).json({ message: 'El periodista no existe' })
     }
 
-    // Crear un nuevo documento de noticia con el ObjectId del periodista encontrado
+    // CREA UNA VARIABLE DE LA NUEVA NOTICIA
     const newNotice = new News({
       title,
       description,
       imageUrl,
       videoUrl,
-      journalistId // Usar el _id del periodista encontrado
+      journalistId // USA EL ID DEL PERIODISTA
     })
 
     const savedNotice = await newNotice.save()
